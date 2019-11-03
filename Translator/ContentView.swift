@@ -9,8 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userData: UserData
     var body: some View {
-        Text("Hello World")
+        TabView {
+            MainScreenView(translator: Translator())
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Главный экран")
+            }
+            Text("Избранное")
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("Избранное")
+            }
+        }
+        
     }
 }
 

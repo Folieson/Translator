@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9259EFF236C6A6D00F9466C /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9259EFE236C6A6D00F9466C /* Translator.swift */; };
 		B9DF627123632FB7000A80E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF627023632FB7000A80E0 /* AppDelegate.swift */; };
 		B9DF627323632FB7000A80E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF627223632FB7000A80E0 /* SceneDelegate.swift */; };
 		B9DF627623632FB7000A80E0 /* Translator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9DF627423632FB7000A80E0 /* Translator.xcdatamodeld */; };
@@ -14,9 +15,18 @@
 		B9DF627A23632FBB000A80E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DF627923632FBB000A80E0 /* Assets.xcassets */; };
 		B9DF627D23632FBB000A80E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DF627C23632FBB000A80E0 /* Preview Assets.xcassets */; };
 		B9DF628023632FBB000A80E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DF627E23632FBB000A80E0 /* LaunchScreen.storyboard */; };
+		B9DF628E236339BF000A80E0 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF628D236339BF000A80E0 /* MainScreenView.swift */; };
+		B9DF629023633A69000A80E0 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF628F23633A69000A80E0 /* LanguageSelectionView.swift */; };
+		B9DF629223633CC3000A80E0 /* LanguageSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF629123633CC3000A80E0 /* LanguageSelectionController.swift */; };
+		B9DF629423633CFF000A80E0 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF629323633CFF000A80E0 /* Language.swift */; };
+		B9DF629623634686000A80E0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF629523634686000A80E0 /* Data.swift */; };
+		B9DF6298236346F6000A80E0 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF6297236346F6000A80E0 /* UserData.swift */; };
+		B9DF629B2363509B000A80E0 /* SupportedLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF629A2363509B000A80E0 /* SupportedLanguages.swift */; };
+		B9DF629E23635358000A80E0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B9DF629D23635358000A80E0 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9259EFE236C6A6D00F9466C /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		B9DF626D23632FB6000A80E0 /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DF627023632FB7000A80E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9DF627223632FB7000A80E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +36,14 @@
 		B9DF627C23632FBB000A80E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B9DF627F23632FBB000A80E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DF628123632FBB000A80E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9DF628D236339BF000A80E0 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		B9DF628F23633A69000A80E0 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		B9DF629123633CC3000A80E0 /* LanguageSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionController.swift; sourceTree = "<group>"; };
+		B9DF629323633CFF000A80E0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		B9DF629523634686000A80E0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B9DF6297236346F6000A80E0 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		B9DF629923634D6E000A80E0 /* languagesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = languagesData.json; sourceTree = "<group>"; };
+		B9DF629A2363509B000A80E0 /* SupportedLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DF629E23635358000A80E0 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +77,7 @@
 		B9DF626F23632FB6000A80E0 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
+				B9DF628D236339BF000A80E0 /* MainScreenView.swift */,
 				B9DF627023632FB7000A80E0 /* AppDelegate.swift */,
 				B9DF627223632FB7000A80E0 /* SceneDelegate.swift */,
 				B9DF627723632FB7000A80E0 /* ContentView.swift */,
@@ -66,6 +86,14 @@
 				B9DF628123632FBB000A80E0 /* Info.plist */,
 				B9DF627423632FB7000A80E0 /* Translator.xcdatamodeld */,
 				B9DF627B23632FBB000A80E0 /* Preview Content */,
+				B9DF628F23633A69000A80E0 /* LanguageSelectionView.swift */,
+				B9DF629123633CC3000A80E0 /* LanguageSelectionController.swift */,
+				B9DF629323633CFF000A80E0 /* Language.swift */,
+				B9DF629523634686000A80E0 /* Data.swift */,
+				B9DF6297236346F6000A80E0 /* UserData.swift */,
+				B9DF629923634D6E000A80E0 /* languagesData.json */,
+				B9DF629A2363509B000A80E0 /* SupportedLanguages.swift */,
+				B9259EFE236C6A6D00F9466C /* Translator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -94,6 +122,9 @@
 			dependencies = (
 			);
 			name = Translator;
+			packageProductDependencies = (
+				B9DF629D23635358000A80E0 /* SwiftyJSON */,
+			);
 			productName = Translator;
 			productReference = B9DF626D23632FB6000A80E0 /* Translator.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +153,9 @@
 				Base,
 			);
 			mainGroup = B9DF626423632FB6000A80E0;
+			packageReferences = (
+				B9DF629C23635358000A80E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = B9DF626E23632FB6000A80E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,8 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9DF627623632FB7000A80E0 /* Translator.xcdatamodeld in Sources */,
+				B9DF628E236339BF000A80E0 /* MainScreenView.swift in Sources */,
+				B9DF629B2363509B000A80E0 /* SupportedLanguages.swift in Sources */,
+				B9DF629223633CC3000A80E0 /* LanguageSelectionController.swift in Sources */,
 				B9DF627123632FB7000A80E0 /* AppDelegate.swift in Sources */,
+				B9DF629023633A69000A80E0 /* LanguageSelectionView.swift in Sources */,
+				B9DF629423633CFF000A80E0 /* Language.swift in Sources */,
 				B9DF627823632FB7000A80E0 /* ContentView.swift in Sources */,
+				B9DF629623634686000A80E0 /* Data.swift in Sources */,
+				B9DF6298236346F6000A80E0 /* UserData.swift in Sources */,
+				B9259EFF236C6A6D00F9466C /* Translator.swift in Sources */,
 				B9DF627323632FB7000A80E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9DF629C23635358000A80E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9DF629D23635358000A80E0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9DF629C23635358000A80E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B9DF627423632FB7000A80E0 /* Translator.xcdatamodeld */ = {
