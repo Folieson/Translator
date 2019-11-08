@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             MainScreenView(translator: Translator())
+                .environmentObject(self.userData)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Главный экран")

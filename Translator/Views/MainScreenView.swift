@@ -9,12 +9,13 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    //@Binding var translator: TranslatorProtocol
     @ObservedObject var translator: Translator
+    @EnvironmentObject var userData: UserData
     var body: some View {
         
         VStack {
             LanguageSelectionView()
+                .environmentObject(self.userData)
             TextField("Текст для перевода", text: $translator.textForTranslation)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
@@ -26,6 +27,7 @@ struct MainScreenView: View {
             Spacer()
             Text(translator.translatedText)
             Spacer()
+            //.sheet(isPresented: <#T##Binding<Bool>#>, content: <#T##() -> View#>)
         }
     }
 }

@@ -10,20 +10,26 @@ import SwiftUI
 
 struct LanguageSelectionView: View {
     @State var showingLanguageSelector = false
-//    var originalLanguage = "русский"
-//    var targetLanguage = "английский"
+    @EnvironmentObject var userData: UserData
+
     var body: some View {
         HStack() {
-            //Text(self.userData.currentLanguages[0].name.rawValue)
-            Text("русский")
+            Text(userData.currentLanguages[0].name)
+                .frame(minWidth: 100)
+                .padding(.trailing)
+            Spacer(minLength: 5)
             Button(action:{
-                self.showingLanguageSelector.toggle()
+                self.userData.currentLanguages.reverse()
             }) {
                 Image(systemName: "arrow.right.arrow.left")
             }
-            //Text(self.userData.currentLanguages[1].name.rawValue)
-            Text("английский")
+            .padding(.vertical)
+            Spacer(minLength: 5)
+            Text(userData.currentLanguages[1].name)
+                .frame(minWidth: 100)
+                .padding(.leading)
         }
+        .padding()
     }
 }
 
